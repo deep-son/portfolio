@@ -24,4 +24,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FOLDER: .next
-          BRANCH: main
+          BRANCH: gh-pages
