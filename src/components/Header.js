@@ -23,7 +23,7 @@ class Header extends Component {
               {name}
             </span>
           </h1>
-          <h1 className="text-6xl font-bold tracking-wide mt-4">{this.titles}</h1>
+          <h1 className="text-6xl font-bold tracking-wide mt-4">I am a {this.titles}</h1>
           <a href="#about" className="text-2xl font-bold p-0.5 mt-6 w-44 bg-gradient-to-r to-green-400 from-blue-500 via-indigo-500">
             <div className="bg-white">
               <span className="block text-center py-0.5 px-2 font-semibold bg-white font-bold bg-gradient-to-r to-green-400 from-blue-500 bg-clip-text text-transparent">
@@ -33,7 +33,6 @@ class Header extends Component {
           </a>
         </div>
       </section>
-
     );
   }
 }
