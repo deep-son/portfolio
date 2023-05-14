@@ -1,13 +1,9 @@
 import React, { Component } from "react";
-import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
-import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
 
 class About extends Component {
   render() {
     if (this.props.sharedBasicInfo) {
-      var profilepic = "images/" + this.props.sharedBasicInfo.image;
+      var profilepic = "../public/images/" + this.props.sharedBasicInfo.image;
     }
     if (this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.about;
@@ -17,36 +13,23 @@ class About extends Component {
 
     return (
       <section id="about">
-        <div className="col-md-12">
-          <h1 style={{ color: "black" }}>
-            <span>{sectionName}</span>
-          </h1>
-          <div className="row center mx-auto mb-5">
-            <div className="col-md-4 mb-5 center">
+      <div id="About" className="px-8 md:px-32 pb-32 content-center bg-gradient-to-r to-green-400 from-blue-500">
+      <h1 className="pt-12 uppercase font-bold text-center text-white text-bold text-4xl">{}</h1>
+      <div className="mt-16 flex flex-col md:flex-row align-center items-center">
+        <div className="w-1/2 flex justify-center content-center">
+        <div className="col-md-4 mb-5 center">
               <div className="polaroid">
                 <span style={{ cursor: "auto" }}>
                   <img
-                    height="250px"
+                    height="350px"
                     src={profilepic}
                     alt="Avatar placeholder"
-                  />
-                  <Icon
-                    icon={angularIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                  <Icon
-                    icon={reactIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                  <Icon
-                    icon={vueIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                 </span>
               </div>
             </div>
-
-            <div className="col-md-8 center">
+        </div>
+        <div className="col-md-8 center">
               <div className="col-md-10">
                 <div className="card">
                   <div className="card-header">
@@ -86,7 +69,7 @@ class About extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> 
       </section>
     );
   }

@@ -1,20 +1,34 @@
 {
+  "navigation": [
+    {
+      "title": "About",
+      "url": "http://www.example.com/about"
+    },
+    {
+      "title": "Projects",
+      "url": "http://www.example.com/portfolio"
+    },
+    {
+      "title": "Contact",
+      "url": "http://www.example.com/contact"
+    }
+  ],
     "basic_info": {
-      "name": "Davina Griss",
-      "titles": [ "Front-end Developer", "Senior Data Engineer", "Dev Team lead", "Mobile App Developer" ],
+      "name": "Deepanshu Sonparote",
+      "titles": [ "Software Engineer" ],
       "social": [
         {
           "name": "github",
-          "url": "https://github.com",
+          "url": "https://github.com/deep-son",
           "class": "fab fa-github"
         },
         {
           "name": "instagram",
-          "url": "https://www.instagram.com",
-          "class": "fab fa-instagram"
+          "url": "https://www.linkedin.com/in/deepanshusonparote/",
+          "class": "fab fa-linkedin"
         }
       ],
-      "image": "myProfile.jpg"
+      "image": "profile.jpeg"
     },
     "skills": {
       "icons": [
