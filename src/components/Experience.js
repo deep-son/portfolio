@@ -12,13 +12,17 @@ class Experience extends Component {
       var sectionName = this.props.resumeBasicInfo.section_name.experience;
       var work = this.props.resumeExperience.map(function (work, i) {
         const technologies = work.technologies;
-        const mainTechnologies = work.mainTech;
+        // const mainTechnologies = work.mainTech;
+        const responsibilities = work.responsibilities
+        const icon = work.icon;
 
-        var mainTech = mainTechnologies.map((technology, i) => {
+        var responsibile = responsibilities.map((technology, i) => {
           return (
-            <Badge pill className="main-badge mr-2 mb-2" key={i}>
-              {technology}
-            </Badge>
+            
+              <ul class="list-disc list-inside">
+                <li key={i}>{technology}</li>
+              </ul>
+              
           );
         });
         var tech = technologies.map((technology, i) => {
@@ -31,40 +35,55 @@ class Experience extends Component {
         return (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date={work.years}
             iconStyle={{
-              background: "#AE944F",
-              color: "#fff",
+              background: "white",
+              color: "#000",
               textAlign: "center",
             }}
-            icon={<i className="fab fa-angular experience-icon"></i>}
+            icon={<i className={icon}></i>}
             key={i}
           >
-            <div style={{ textAlign: "left", marginBottom: "4px" }}>
+            {/* <div style={{ textAlign: "left", marginBottom: "4px" }}>
               {mainTech}
-            </div>
+            </div> */}
 
             <h3
               className="vertical-timeline-element-title"
               style={{ textAlign: "left" }}
             >
-              {work.title}
+              {work.company}
             </h3>
             <h4
               className="vertical-timeline-element-subtitle"
               style={{ textAlign: "left" }}
             >
-              {work.company}
+              {work.title}
+              
             </h4>
-            <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
+            <h6
+              className="vertical-timeline-element-subtitle"
+              style={{ textAlign: "left" }}
+            >
+              {work.years}
+              
+            </h6>
+            <div style={{ textAlign: "left", marginTop: "15px", marginBottom: "15px"}}>{tech}</div>
+            <h5
+              className="vertical-timeline-element-subtitle"
+              style={{ textAlign: "left" }}
+            >
+              {responsibile}
+            </h5>
+            
           </VerticalTimelineElement>
         );
       });
     }
 
     return (
-      <section id="resume" className="pb-5">
-        <div className="col-md-12 mx-auto">
+      <section id="experience">
+        <div className="px-8 md:px-32 pb-32 content-center bg-gradient-to-r to-green-400 from-blue-500">
+        <div className="col-md-12 mx-auto ">
           <div className="col-md-12">
             <h1 className="section-title" style={{ color: "black" }}>
               <span className="text-black" style={{ textAlign: "center" }}>
@@ -73,13 +92,13 @@ class Experience extends Component {
             </h1>
           </div>
         </div>
-        <div className="col-md-8 mx-auto">
+        <div className="col-md-8 mx-auto ">
           <VerticalTimeline>
             {work}
             <VerticalTimelineElement
               iconStyle={{
-                background: "#AE944F",
-                color: "#fff",
+                background: "white",
+                color: "black",
                 textAlign: "center",
               }}
               icon={
@@ -87,6 +106,7 @@ class Experience extends Component {
               }
             />
           </VerticalTimeline>
+        </div>
         </div>
       </section>
     );
