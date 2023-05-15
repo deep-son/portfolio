@@ -72,26 +72,18 @@ class ProjectDetailsModal extends Component {
               cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
               animation="scaleOutAnimation"
               className="slider-image"
-            >
-              {img}
+            >{img}
             </AwesomeSlider>
           </div>
           <div className="col-md-10 mx-auto">
             <h3 style={{ padding: "5px 5px 0 5px" }}>
               {title}
-              {url ? (
-                <a
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="link-href"
-                >
-                  <i
-                    className="fas fa-external-link-alt"
-                    style={{ marginLeft: "10px" }}
-                  ></i>
-                </a>
-              ) : null}
+              <a href={url} target="_blank" rel="noopener noreferrer"> 
+              <button class="mr-5 bg-white border-gray-400 hover:text-gray text-black py-2 px-6">
+                Check out <i className="fab fa-github"></i>
+              </button>
+              
+            </a>
             </h3>
             <p className="modal-description">{description}</p>
             <div className="col-md-12 text-center">

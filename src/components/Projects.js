@@ -38,6 +38,7 @@ class Projects extends Component {
                   <br />
                   <p className="project-title-settings mt-3">
                     {projects.title}
+                  
                   </p>
                 </div>
               </div>
@@ -48,8 +49,8 @@ class Projects extends Component {
     }
 
     return (
-      <section id="portfolio">
-        <div className="col-md-12">
+      <section id="projects">
+        <div className="col-md-12 bg-color-white">
           <h1 className="section-title" style={{ color: "black" }}>
             <span>{sectionName}</span>
           </h1>
