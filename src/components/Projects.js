@@ -47,7 +47,6 @@ class Projects extends Component {
         );
       });
     }
-
     return (
       <section id="projects">
         <div className="col-md-12 bg-color-white">

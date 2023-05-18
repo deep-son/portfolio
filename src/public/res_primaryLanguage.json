@@ -1,7 +1,8 @@
 {
     "basic_info": {
-      "description_header": "Hi",
-      "description": "I am enthusiastic about solving real-world problems by leveraging the various ML and DL techniques, which I have learned and used over the years. As of now, my interests are focused on Data Engineering and Deep Learning. Always eager to learn new concepts and ideas to develop myself professionally and personally",
+      "description_header": "Ahoy",
+      "description": " Hey fellow knowledge seeker! I'm a 🖥️ computer science master's student at the University of Stuttgart, trying to bridge the gap between academia and industry. It's like herding caffeinated kittens🐱 on a unicycle! Initially, I fancied myself a machine learning and deep learning wizard 🧙, ready to conquer the world. But, lo and behold, the real villain was lurking in the shadows—the data itself! Cue dramatic music🎶. Now, I've become a fearless ⚔️ data warrior, 🛡️ armed with humor and a thirst for knowledge. Join me on this journey as we tame wild datasets and unleash their hidden potential! Just remember, laughter is the secret sauce to debugging the quirks of coding. Let's embark on this hilarious adventure together!",
+      "note": "No language model was harmed while generating this prompt: Chat-GPT maybe 🙃",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -44,15 +45,7 @@
           "Angular 8/9/10"
         ],
         "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
+          "AutoML", "Explainable AI"
         ],
         "responsibilities": [
           "test"
@@ -63,19 +56,8 @@
         "title": "Data and AI Intern",
         "years": "Dec 2022 - Mar 2023",
         "icon": "fa fa-laptop-code mx-auto experience-icon",
-        "mainTech": [
-          "Angular 8/9/10"
-        ],
         "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
+          "Data Modelling","Data Warehousing", "Data Analytics"
         ],
         "responsibilities": [
           "test"
@@ -86,19 +68,13 @@
         "title": "Werk Student",
         "years": "Apr 2022 - Oct 2022",
         "icon": "fa fa-user-hard-hat mx-auto experience-icon",
-        "mainTech": [
-          "Angular 7/8"
-        ],
         "technologies": [
-          "RxJS",
-          "Django",
-          "PHP",
-          "JavaScript",
-          "DHTMLX Gantt"
+          "AIoT","Deep Learning","Web Development"
         ]
         ,
         "responsibilities": [
-          "test"
+          " Developed an online analytical tool to map industrial use cases to governance", "Created an end-to-end web platform for logistics handling and product management using React and Google Firebase", "Audio Signal classification for smartwiper operation in digital.auto"
+
         ]
       }
       ,
@@ -107,19 +83,12 @@
         "title": "Werk Student",
         "years": "Aug 2021 - Feb 2022",
         "icon": "fa fa-user-hard-hat mx-auto experience-icon",
-        "mainTech": [
-          "Angular 7/8"
-        ],
         "technologies": [
-          "RxJS",
-          "Django",
-          "PHP",
-          "JavaScript",
-          "DHTMLX Gantt"
+          "Data Quality", "Data Governance", "Data pre-processing"
         ]
         ,
         "responsibilities": [
-          "test"
+          " Developed Python scripts for automatic metadata extraction from CANape files","Provided support for data pre-processing and quality management in an automated parking system","Conducted root cause analysis of varied data distribution to enhance the performance of ML models"
         ]
       }
     ]
